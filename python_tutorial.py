@@ -101,6 +101,11 @@ x += "Hello World"
 x
 
 ### Variables and datatpes
+# Variable name cannot start from number
+# upper and lower case are important 
+# You can use a-z, 0-9 and "-"
+# don't use pyhon command to name variables
+
 
 # Check datatype
 # variable with string datatype
@@ -114,6 +119,47 @@ type(x)
 # variable with float datatype
 x = 123.890
 type(x)
+
+## Data collections
+
+# Tuples
+# Tuple can handle values with different datatype
+# Tuple cannot be sort
+x = 12, "Python", 0.123, (12+5j), (1,2,3,4,5,6)
+type(x)
+
+# You can index tuple elements. Index numbers start from 0 value
+x[2]
+x[0]
+
+# You can also start from right
+x[-1]
+
+# 
+x[-1][3]
+
+# Adding new values to tuple. "," is needed
+y = 'Hello World !',
+z = x + y
+z
+
+# Tuple multiplication
+z * 3
+
+
+# Checking index number of tuple elements
+z.index("Python")
+# index will return index of value first occurence
+(z*3).index("Python")
+
+# Count occurence of tuple element
+z.count("Python")
+# or
+(z*3).count("Python")
+
+
+
+
 
 
 
