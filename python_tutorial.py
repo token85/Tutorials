@@ -228,13 +228,115 @@ o = list(range(1,100))
 o
 
 ## Sets in Python
+# You can create set using {}.
+# Set can contain values of different datatypes
+# Elements cannot be repeated
+# Elements order is not important
+# You cannot sort or index sets
+
+# Create set
+x = {1,2,3,4,1,2,3,4,"Hello World", "Python", "Python",1,2,3,4}
+x
+
+# You can add new elements to set
+x.add(987)
+x
+
+# You can remove elements from set
+x.remove(987)
+x
+
+## Dictionaries in Python
+# Key-value datatype 
+# Keys need to be uniqe
+# Dicts have keys, not indexes
+# You can kreate keys also using string values
+d ={1:"Python", 2:"is", 3:"the", 4:"best", 7: "programming", 9:"language"}
+d
+
+# Choosing value using key number
+d[1]
+d[9]
+
+# You can modify value using key
+d[1] = "Python 3"
+d
+
+# You can delete value
+del d[7]
+d
+
+# You can list keys
+d.keys()
+# # #  Out[107]: dict_keys([1, 2, 3, 4, 9])
+
+# You can list values
+d.values()
+# # # Out[108]: dict_values(['Python 3', 'is', 'the', 'best', 'language'])
+
+## zip() function can join different type of collection
+
+my_tuple = 12, "Python", 0.123, (12+5j), (1,2,3,4,5,6)
+my_list = [1, 2, 'Python', "Learn more"]
+my_set = {1,2,3,4,1,2,3,4,"Hello World", "Python", "Python",1,2,3,4}
+my_dict = {1:"Python", 2:"is", 3:"the", 4:"best", 7: "programming", 9:"language"}
 
 
+# You can reate list using zip() function
+zip_list = list(zip(my_tuple, my_list, my_set, my_dict))
+zip_list
+
+# You can create dict using zip() function
+a=(1,2,3)
+b=("Hello","Python","!")
+zip_dict = dict(zip(a,b))
+zip_dict
+
+### if statement in Python
+# You need use ":" in condition line
+# use 4 space before result code
+# use == if you want use equal condition
+x = 100
+
+if x > 100:
+    print("Better than 100")
+elif x == 100:
+    print("x is 100")
+elif x < 100:
+    print("x is less then 100")
+else:
+    print("Never mind")
 
 
+# Conditional statements
+x = 10.1
+print(x, 'is', 'greater than 100' if x > 100 else 'is not greater than 100')
 
 
+### For loop
+# numbers from 0 to 99
+for i in range(100):
+    print("number: " + str(i))
 
+# numbers from 1 to 100
+for i in range(100):
+    print("number: " + str(i+1))
+
+### While loop
+
+n = 10
+while n < 101:
+    print("current number: ", n)
+    n += 2
+    
+
+# using break, if you want to quit while loop ealier
+n = 10
+while n < 101:
+    print("current number: ", n)
+    n += 2
+    if n == 50:
+        break
 
 
 
