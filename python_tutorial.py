@@ -2,6 +2,8 @@
 """
 Created on Thu Oct 31 06:42:56 2019
 
+Quick Python tutorial. Based od Python 3
+
 @author: token
 """
 ### Help
@@ -125,7 +127,9 @@ type(x)
 ## Tuples
 # Tuple can handle values with different datatype
 # Tuple cannot be sort
-# Podstawowym typem danych złozonych są krotki. Tworzy się je za pomocą nawiasu okrągłego (). Przetrzymują one uporządkowane dane (kazdemu elementowi przypisany jest unikalny indeks  i∈{0,…,n−1}  gdzie  n∈N  jest liczebnością kolekcji) dowolnych typów:
+# Create tuple using ()
+# Each element has index
+# tuple can handle diffrent datatypes
 # You cannot modify list elements
 x = 12, "Python", 0.123, (12+5j), (1,2,3,4,5,6)
 type(x)
@@ -173,7 +177,8 @@ sum(a)
 
 
 ## Python lists
-# Podobnie jak krotki listy przechowują uporządkowane elementy dowolnego typu. Elementy te mogą się też powtarzać. Listy wykorzystują też wszystkie metody dostępne dla krotek. Tworzy się je za pomocą nawiasu kwadratowego:
+# Lists can handle different datatypes values
+# Create list using []
 
 l = [1, 2, 'Python', "Learn more"]
 type(l)
