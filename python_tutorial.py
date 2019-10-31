@@ -338,7 +338,55 @@ while n < 101:
     if n == 50:
         break
 
+### Loop using sequences
+# List crate
+[i for i in range(4)]
+# or
+[i**2 for i in range(4)]
 
+# You can use if statement inside
+[i**2 for i in range(4) if i == 4]
 
+### Functions
+# You can define your own functions using def statement
 
+# function without input parm
+def myFunction():
+    print("Hello")
+
+myFunction()
+
+# function with input parm
+def myNewFunction(x):
+    return x * 10
+
+myNewFunction(5)
+
+### Lambda statement
+# You can create new function using lambda statement
+
+myLambdaFunction = lambda x: x ** 10
+
+myLambdaFunction (2)
+
+### Libraries in Python
+
+# math lib
+import math
+
+math.e
+math.sin(0)
+math.pi
+
+# Random values lib
+import random
+# random value
+random.random()
+
+random.seed(100)
+
+# math , statistic, matrix
+import numpy
+
+numpy.abs(-100)
 
