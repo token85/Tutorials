@@ -122,9 +122,11 @@ type(x)
 
 ## Data collections
 
-# Tuples
+## Tuples
 # Tuple can handle values with different datatype
 # Tuple cannot be sort
+# Podstawowym typem danych złozonych są krotki. Tworzy się je za pomocą nawiasu okrągłego (). Przetrzymują one uporządkowane dane (kazdemu elementowi przypisany jest unikalny indeks  i∈{0,…,n−1}  gdzie  n∈N  jest liczebnością kolekcji) dowolnych typów:
+# You cannot modify list elements
 x = 12, "Python", 0.123, (12+5j), (1,2,3,4,5,6)
 type(x)
 
@@ -157,16 +159,75 @@ z.count("Python")
 # or
 (z*3).count("Python")
 
+# number of tuple elements
+len(z)
+
+# Sum, min, max on tuple elements, when tuple have only numeric values
+a = (1, 2, 3.14, 8)
+# min
+min(a)
+# max
+max(a)
+# sum
+sum(a)
 
 
+## Python lists
+# Podobnie jak krotki listy przechowują uporządkowane elementy dowolnego typu. Elementy te mogą się też powtarzać. Listy wykorzystują też wszystkie metody dostępne dla krotek. Tworzy się je za pomocą nawiasu kwadratowego:
 
+l = [1, 2, 'Python', "Learn more"]
+type(l)
 
+# You can modify list elements
+l[2] = 'abc'
+l
 
+# You can index list elements. Index numbers start from 0 value
+l[2]
+l[0]
 
+# You can also start from right
+[-1]
 
+# You can add new values
+m = l + [1,2,3,4]
+m
 
+# or
+l.append("New string value")
+l
 
+# Choose element from list
+l[-2]
 
+# Choose list elements
+l[0:3]
+
+# You can change more than one element
+l[0:2] = [1,2,3,4,5,6]
+l
+
+# Remove list element using list value
+l.remove('Learn more')
+l
+
+# Delete list elements using index number
+del(l[1:2])
+l
+# Sort list elements
+l.sort
+l
+
+# Sort list descending
+n = [1,5,2,6,8,3.14]
+n.sort(reverse=True)
+n
+
+# List elements generator. List of values from 0 to 99
+o = list(range(1,100))
+o
+
+## Sets in Python
 
 
 
