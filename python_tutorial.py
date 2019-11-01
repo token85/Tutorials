@@ -6,7 +6,23 @@ Quick Python tutorial. Based od Python 3
 
 @author: token
 """
-### Help
+
+
+### Basics
+# Print text value
+print("Hello World")
+
+# Print number
+print(123)
+
+# Assign None value (like null)
+x = None
+print(x)
+
+# Check datatype
+type(123)
+
+# Help
 help(str)
 
 
@@ -29,9 +45,10 @@ x = (15 + 5j)
 type(x)
 
 
+
 ### Strings
 
-'Hello Wordld'
+'Hello World'
 
 # or
 
@@ -61,10 +78,64 @@ var[7]
 # Substring from right
 "Hello World! "[-5]
 
+# String reverse in Python
+x = "I like learning Python"
+print(x[::-1])
+
+# Lower case and upper case on string Value
+x = "I like learning Python"
+print(x.upper())
+print(x.lower())
+
+# You can insert variable into string value.
+# Use %s if you want to insert string value.
+# Use %d if you want to insert integer number.
+# Use %f if you want to insert float number.
+# Float with defined fraction %.<number of digits>f 
+
+x = 28
+print("Ann is %d years old." % x)
+
+# You can use more than one variable
+x = 28
+y = "Paris"
+print("Ann is %d years old and she is from %s" % (x, y))
+
+# Insert more than one value with same datatype
+name = "Ann"
+age = 29
+score = 78.5
+year = 2019
+city = "Paris"
+print("%s is from %s. She is %d years old. She wrote last exam in %d and reach %.1f points" 
+      % (name, city, age, year, score ))
+
+
+# Check the number of occurrences of the character or string in other string
+x = "I like learning Python. Python is the best programming language"
+print(x.count("g"))
+print(x.count("Python"))
+
+# You can also check the position of string or character in other strig
+# Python will return position of first occurence
+x = "I like learning Python. Python is the best programming language"
+print(x.index("g"))
+print(x.index("Python"))
+
+# Check start and end string parts
+# It will return True or False 
+x = "I like learning Python"
+print(x.startswith("I like"))
+print(x.endswith("Pyt"))
+
+# Create list of strings from other string
+# You need to choose delimiter for example space or "," or ";"
+x = "I like learning Python. Python is the best programming language"
+print(x.split(" "))
 
 ### Operators
 
-# Arithmetical
+# Arithmetic Operators
 # use +, -, *, /
 
 # sum 
@@ -86,7 +157,7 @@ x
 # power
 10 **2
 
-# Other way to use arithetical operators - Assignment
+# Other way to use arithetic operators - Assignment
 x = 17
 x += 2
 x
@@ -96,18 +167,45 @@ x = 12
 x **= 2
 x
 
-# Example with string walue
+# If you want to do longer calculation
+x = (2+6) * 2 / 3
+print(x)
+
+# Example with string value
 #
 x = []
 x += "Hello World"
-x
+print(x)
+
+# Comparision operators
+# Comparision operators will retur True or False values
+# You can use them in conditional statement
+x= 123
+
+print(x==120)
+print(x==123)
+print(x>=123)
+print(x<=123)
+print(x>120)
+print(x<123)
+
+# Logical operators
+
+
+
 
 ### Variables and datatpes
 # Variable name cannot start from number
 # upper and lower case are important 
 # You can use a-z, 0-9 and "-"
 # don't use pyhon command to name variables
+# In Python you don't need to declare variable before using them
 
+# You can create more than one variable in one line
+x,y,z = 1,2,3
+print(x)
+print(y)
+print(z)
 
 # Check datatype
 # variable with string datatype
@@ -150,7 +248,7 @@ z = x + y
 z
 
 # Tuple multiplication
-z * 3
+print(z * 3)
 
 
 # Checking index number of tuple elements
@@ -231,6 +329,14 @@ n
 # List elements generator. List of values from 0 to 99
 o = list(range(1,100))
 o
+
+# How to use arithmetic operations with lists
+a = [1,2,3]
+b = [4,5,6]
+c = a + b
+print(c)
+
+
 
 ## Sets in Python
 # You can create set using {}.
